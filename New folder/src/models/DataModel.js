@@ -1,11 +1,10 @@
 const mongoose = require("mongoose");
 
 const Warehouse = mongoose.Schema({
-    warehouse_id:{type:String,required:true},
-    warehouse_name:{type:Number,required:false},
-    subwarehouse_id:{type:Number},
+    warehouse_id:{type:Number,required:true},
+    warehouse_name:{type:String,required:true},
+    subwarehouse_id:{type:Number,required:true},
     subwarehouse_name:{type:String,required:true}
-
 },
 {
     timestamps: true,
